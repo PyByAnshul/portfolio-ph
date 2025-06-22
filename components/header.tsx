@@ -62,10 +62,12 @@ export function Header() {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button onClick={handleDownloadResume} className="bg-blue-600 hover:bg-blue-700">
-              <Download className="w-4 h-4 mr-2" />
-              Resume
-            </Button>
+            <a href="/resume.pdf" download className="no-underline">
+              <Button className="bg-blue-600 hover:bg-blue-700">
+                <Download className="w-4 h-4 mr-2" />
+                Resume
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -89,9 +91,11 @@ export function Header() {
                   {item.name}
                 </button>
               ))}
-              <Button onClick={handleDownloadResume} className="w-full mt-4 bg-blue-600 hover:bg-blue-700">
-                <Download className="w-4 h-4 mr-2" />
-                Download Resume
+              <Button asChild className="w-full mt-4 bg-blue-600 hover:bg-blue-700">
+                <a href="/resume.pdf" download>
+                  <Download className="w-4 h-4 mr-2" />
+                  Download Resume
+                </a>
               </Button>
             </div>
           </div>

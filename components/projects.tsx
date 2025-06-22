@@ -1,76 +1,17 @@
 import { ExternalLink, Github, Code, Database } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import projectsData from "../data/projects.json"
+
+const iconMap = {
+  Code,
+  Database,
+}
 
 export function Projects() {
-  const projects = [
-    {
-      title: "PyMind – AI-Powered Assistant",
-      description:
-        "AI chat app using Chainlit + Gemini for real-time Python code help. Features file upload, chat history with TinyDB, and command-based UI.",
-      technologies: ["Python", "Chainlit", "Gemini AI", "TinyDB"],
-      icon: Code,
-      color: "bg-blue-100 text-blue-600",
-    },
-    {
-      title: "pyide-egsd – Online Python IDE",
-      description:
-        "Online Python IDE similar to online-python.com. CodeMirror frontend + Docker backend with I/O via subprocess for real-time code execution.",
-      technologies: ["Python", "Docker", "CodeMirror", "Subprocess"],
-      icon: Database,
-      color: "bg-green-100 text-green-600",
-      liveUrl: "https://pyide-egsd.onrender.com",
-    },
-    {
-      title: "VidFlow – Video Processing API",
-      description:
-        "FastAPI backend to handle video upload and metadata extraction. Uses Celery, MongoDB, and FFmpeg; containerized with Docker for scalable video processing.",
-      technologies: ["FastAPI", "Celery", "MongoDB", "FFmpeg", "Docker"],
-      icon: Code,
-      color: "bg-purple-100 text-purple-600",
-    },
-    {
-      title: "Sample-Set – Social Media Automation",
-      description:
-        "Flask dashboard that scrapes Instagram, stores data, and posts summaries to Twitter using Gemini. MongoDB, Redis, and Docker-based architecture.",
-      technologies: ["Flask", "MongoDB", "Redis", "Docker", "Gemini AI"],
-      icon: Database,
-      color: "bg-orange-100 text-orange-600",
-    },
-    {
-      title: "TrainTransit",
-      description:
-        "Train info app using Flask and MongoDB that shows routes and schedules. Clean UI with Bootstrap and deployed online for easy access.",
-      technologies: ["Flask", "MongoDB", "Bootstrap", "Python"],
-      icon: Code,
-      color: "bg-indigo-100 text-indigo-600",
-      githubUrl: "https://github.com/anshul-kumar",
-    },
-    {
-      title: "Face Recognition Attendance App",
-      description:
-        "Flask + OpenCV app that marks attendance via face recognition. Features real-time camera feed and CSV logging for attendance tracking.",
-      technologies: ["Flask", "OpenCV", "Python", "CSV"],
-      icon: Database,
-      color: "bg-red-100 text-red-600",
-      githubUrl: "https://github.com/anshul-kumar",
-    },
-    {
-      title: "Banking Web App",
-      description:
-        "Full-stack app for simulating banking operations. Built with Flask + SQLite featuring user authentication and transaction handling.",
-      technologies: ["Flask", "SQLite", "Python", "Authentication"],
-      icon: Code,
-      color: "bg-yellow-100 text-yellow-600",
-    },
-    {
-      title: "Chainlit-Llama-Docker App",
-      description:
-        "Chainlit app using LLaMA models with Docker + docker-compose. Terminal + chatbot interface with API-based model loading.",
-      technologies: ["Chainlit", "LLaMA", "Docker", "Docker Compose"],
-      icon: Database,
-      color: "bg-teal-100 text-teal-600",
-    },
-  ]
+  const projects = projectsData.map((project) => ({
+    ...project,
+    icon: iconMap[project.icon as keyof typeof iconMap] || Code,
+  }))
 
   return (
     <section id="projects" className="py-20 bg-white">
@@ -94,7 +35,7 @@ export function Projects() {
                 <p className="text-gray-700 mb-6 leading-relaxed">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-6">
-                  {project.technologies.map((tech, techIndex) => (
+                  {project.technologies.map((tech: string, techIndex: number) => (
                     <span key={techIndex} className="px-3 py-1 bg-white text-gray-700 rounded-full text-sm font-medium">
                       {tech}
                     </span>

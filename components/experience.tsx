@@ -1,40 +1,8 @@
 import { Calendar, MapPin } from "lucide-react"
+import experienceData from "../data/experience.json"
 
 export function Experience() {
-  const experiences = [
-    {
-      title: "Software Engineer",
-      company: "Webkul",
-      location: "Noida",
-      period: "Feb 2025 – Present",
-      achievements: [
-        "Delivered high-performance REST APIs and automated third-party integrations, reducing response times by 30% and manual tasks by 45%",
-        "Developed custom reporting tools that improved client data accuracy by 60%",
-      ],
-    },
-    {
-      title: "Python Developer Intern",
-      company: "Lifease Solutions LLP",
-      location: "Greater Noida",
-      period: "Sept 2024 – Jan 2025",
-      achievements: [
-        "Built FastAPI apps for high-speed data collection",
-        "Used Celery and gevent to improve task throughput by 2.5×",
-        "Deployed on AWS with 99.9% uptime and reduced crashes by 15%",
-      ],
-    },
-    {
-      title: "Django Developer Intern",
-      company: "VakilDesk Pvt. Ltd.",
-      location: "Delhi",
-      period: "Sept 2023 – Jun 2024",
-      achievements: [
-        "Developed APIs and dashboards using Python, Django, and Flask",
-        "Automated pipelines with Celery/Redis/web scraping",
-        "Delivered client-facing apps with cross-functional teams",
-      ],
-    },
-  ]
+  const experiences = experienceData
 
   return (
     <section id="experience" className="py-20 bg-white">

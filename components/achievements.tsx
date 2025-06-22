@@ -1,26 +1,17 @@
 import { Trophy, Target, TrendingUp } from "lucide-react"
+import achievementsData from "../data/achievements.json"
+
+const iconMap = {
+  Trophy: <Trophy className="w-8 h-8" />,
+  Target: <Target className="w-8 h-8" />,
+  TrendingUp: <TrendingUp className="w-8 h-8" />,
+}
 
 export function Achievements() {
-  const achievements = [
-    {
-      title: "100+ LeetCode Problems",
-      description: "Solved over 100 coding problems on LeetCode, demonstrating strong problem-solving skills",
-      icon: <Trophy className="w-8 h-8" />,
-      color: "bg-yellow-100 text-yellow-600",
-    },
-    {
-      title: "100-Day DSA Streak",
-      description: "Completed a consistent 100-day streak of Data Structures and Algorithms practice",
-      icon: <Target className="w-8 h-8" />,
-      color: "bg-green-100 text-green-600",
-    },
-    {
-      title: "Advanced DSA Skills",
-      description: "Strengthened expertise in recursion, dynamic programming, and graph algorithms",
-      icon: <TrendingUp className="w-8 h-8" />,
-      color: "bg-blue-100 text-blue-600",
-    },
-  ]
+  const achievements = achievementsData.map((achievement) => ({
+    ...achievement,
+    icon: iconMap[achievement.icon as keyof typeof iconMap] || iconMap.Trophy,
+  }))
 
   return (
     <section id="achievements" className="py-20 bg-gray-50">

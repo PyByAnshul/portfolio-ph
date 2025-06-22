@@ -1,31 +1,7 @@
+import skillsData from "../data/skills.json"
+
 export function Skills() {
-  const skillCategories = [
-    {
-      title: "Languages",
-      skills: ["Python", "JavaScript"],
-      color: "bg-blue-100 text-blue-800",
-    },
-    {
-      title: "Frameworks",
-      skills: ["Flask", "Django", "FastAPI"],
-      color: "bg-green-100 text-green-800",
-    },
-    {
-      title: "Databases",
-      skills: ["PostgreSQL", "MongoDB"],
-      color: "bg-purple-100 text-purple-800",
-    },
-    {
-      title: "Tools & Technologies",
-      skills: ["Docker", "Redis", "RabbitMQ", "Git", "AWS", "GitHub Projects"],
-      color: "bg-orange-100 text-orange-800",
-    },
-    {
-      title: "Practices",
-      skills: ["REST API Design", "Unit Testing", "Agile", "CI/CD"],
-      color: "bg-indigo-100 text-indigo-800",
-    },
-  ]
+  const skillCategories = skillsData
 
   return (
     <section id="skills" className="py-20 bg-gray-50">
@@ -40,7 +16,7 @@ export function Skills() {
             <div key={index} className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow">
               <h3 className="text-xl font-semibold text-gray-900 mb-4">{category.title}</h3>
               <div className="flex flex-wrap gap-2">
-                {category.skills.map((skill, skillIndex) => (
+                {category.skills.map((skill: string, skillIndex: number) => (
                   <span key={skillIndex} className={`px-3 py-1 rounded-full text-sm font-medium ${category.color}`}>
                     {skill}
                   </span>

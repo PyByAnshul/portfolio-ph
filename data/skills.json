@@ -1,0 +1,27 @@
+[
+  {
+    "title": "Languages",
+    "skills": ["Python", "JavaScript"],
+    "color": "bg-blue-100 text-blue-800"
+  },
+  {
+    "title": "Frameworks",
+    "skills": ["Flask", "Django", "FastAPI"],
+    "color": "bg-green-100 text-green-800"
+  },
+  {
+    "title": "Databases",
+    "skills": ["PostgreSQL", "MongoDB"],
+    "color": "bg-purple-100 text-purple-800"
+  },
+  {
+    "title": "Tools & Technologies",
+    "skills": ["Docker", "Redis", "RabbitMQ", "Git", "AWS", "GitHub Projects"],
+    "color": "bg-orange-100 text-orange-800"
+  },
+  {
+    "title": "Practices",
+    "skills": ["REST API Design", "Unit Testing", "Agile", "CI/CD"],
+    "color": "bg-indigo-100 text-indigo-800"
+  }
+] 
