@@ -1,5 +1,40 @@
 [
   {
+    "title": "Cricket-Insight",
+    "description": "A full-stack cricket analytics platform featuring automated web scraping, scalable MongoDB data pipelines, and AI-driven query handling for deep match insights. Delivered live score updates and instant notifications via WebSockets, boosting real-time accuracy and user engagement. Implemented optimized, fault-tolerant background processing with Celery and Redis, ensuring smooth data ingestion even during peak traffic.",
+    "technologies": ["Python", "FastAPI", "Next.js", "Celery", "Redis", "WebSockets", "Web Scraping","MongoDB"],
+    "icon": "Code",
+    "color": "bg-blue-100 text-blue-600",
+    "liveUrl":"http://52.62.184.61:3000/"
+  },
+  {
+    "title": "Mention-Manager",
+    "description": "Built a real-time Brand Monitoring System that tracks conversations about a brand across social media, news sites, and forums. The app automatically scrapes mentions, analyzes sentiment using AI (VADER), detects sudden spikes in activity, and sends instant alerts for negative trends. Interactive dashboards show mention volumes, sentiment breakdowns, platform-wise distribution, and long-term trends. The system runs on a Dockerized setup with a FastAPI backend and Next.js frontend for quick deployment and smooth real-time monitoring.",
+    "technologies": ["Python", "Django", "Next.js"],
+    "icon": "Code",
+    "color": "bg-blue-100 text-blue-600",
+    "githubUrl":"https://github.com/PyByAnshul/mention-manager",
+    "liveUrl":"https://mention-manager.vercel.app/"
+  },
+  {
+    "title": "Movie-Recomendation",
+    "description": "Built a movie recommendation web app using Python. The system ingests movie metadata and user-rating data to generate personalized movie suggestions. It handles data storage, serves recommendations via a web interface, and supports features like movie poster fetching and metadata lookup. The architecture includes backend services (data processing, recommendation logic), a frontend template-driven UI, and integration for movie details and poster retrieval for better user experience.",
+    "technologies": ["Python", "Flask", "NLP","JavaScript","SQL"],
+    "icon": "Code",
+    "color": "bg-blue-100 text-blue-600",
+    "githubUrl":"https://github.com/PyByAnshul/movie_recomendation",
+    "liveUrl":"https://bulkflow.pythonanywhere.com/"
+  },
+  {
+    "title": "Bulk-Flow",
+    "description": "BulkFlow is a full-stack product management system built for handling large-scale data with ease. It supports full CRUD operations, lightning-fast bulk CSV imports with real-time progress tracking, and an interactive analytics dashboard for instant insights. The platform includes a flexible webhook engine that triggers events on product changes, plus a modern responsive UI with light/dark themes and live updates for a smooth, real-time user experience.",
+    "technologies": ["Python", "FastAPI", "Next.js","Celery","Redis","SQL"],
+    "icon": "Code",
+    "color": "bg-blue-100 text-blue-600",
+    "githubUrl":"https://github.com/PyByAnshul/bulk-flow"
+  },
+
+  {
     "title": "PyMind – AI-Powered Assistant",
     "description": "AI chat app using Chainlit + Gemini for real-time Python code help. Features file upload, chat history with TinyDB, and command-based UI.",
     "technologies": ["Python", "Chainlit", "Gemini AI", "TinyDB"],
@@ -18,22 +53,6 @@
     "githubUrl": "https://github.com/PyByAnshul/pyide"
   },
   {
-    "title": "VidFlow – Video Processing API",
-    "description": "FastAPI backend to handle video upload and metadata extraction. Uses Celery, MongoDB, and FFmpeg; containerized with Docker for scalable video processing.",
-    "technologies": ["FastAPI", "Celery", "MongoDB", "FFmpeg", "Docker"],
-    "icon": "Code",
-    "color": "bg-purple-100 text-purple-600",
-    "githubUrl": "https://github.com/PyByAnshul/vidflow"
-  },
-  {
-    "title": "Sample-Set – Social Media Automation",
-    "description": "Flask dashboard that scrapes Instagram, stores data, and posts summaries to Twitter using Gemini. MongoDB, Redis, and Docker-based architecture.",
-    "technologies": ["Flask", "MongoDB", "Redis", "Docker", "Gemini AI"],
-    "icon": "Database",
-    "color": "bg-orange-100 text-orange-600",
-    "githubUrl":"http://github.com/PyByAnshul/sample-set"
-  },
-  {
     "title": "TrainTransit",
     "description": "Train info app using Flask and MongoDB that shows routes and schedules. Clean UI with Bootstrap and deployed online for easy access.",
     "technologies": ["Flask", "MongoDB", "Bootstrap", "Python"],
@@ -41,29 +60,5 @@
     "color": "bg-indigo-100 text-indigo-600",
     "githubUrl": "https://github.com/PyByAnshul/MyTrain",
     "liveUrl":"https://mytrain.onrender.com"
-  },
-  {
-    "title": "Face Recognition Attendance App",
-    "description": "Flask + OpenCV app that marks attendance via face recognition. Features real-time camera feed and CSV logging for attendance tracking.",
-    "technologies": ["Flask", "OpenCV", "Python", "CSV"],
-    "icon": "Database",
-    "color": "bg-red-100 text-red-600",
-    "githubUrl": "https://github.com/PyByAnshul/face_recognization"
-  },
-  {
-    "title": "Banking Web App",
-    "description": "Full-stack app for simulating banking operations. Built with Flask + SQLite featuring user authentication and transaction handling.",
-    "technologies": ["Flask", "SQLite", "Python", "Authentication"],
-    "icon": "Code",
-    "color": "bg-yellow-100 text-yellow-600",
-    "githubUrl":"https://github.com/PyByAnshul/banking_web"
-  },
-  {
-    "title": "Chainlit-Llama-Docker App",
-    "description": "Chainlit app using LLaMA models with Docker + docker-compose. Terminal + chatbot interface with API-based model loading.",
-    "technologies": ["Chainlit", "LLaMA", "Docker", "Docker Compose"],
-    "icon": "Database",
-    "color": "bg-teal-100 text-teal-600",
-    "githubUrl":"https://github.com/PyByAnshul/chainlit-app"
   }
 ] 

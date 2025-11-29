@@ -19,7 +19,7 @@ export default function Home() {
         <Experience />
         <Education />
         <Projects />
-        <Achievements />
+        {/* <Achievements /> */}
         <Contact />
       </main>
     </div>

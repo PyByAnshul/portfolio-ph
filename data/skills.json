@@ -6,7 +6,7 @@
   },
   {
     "title": "Frameworks",
-    "skills": ["Flask", "Django", "FastAPI"],
+    "skills": ["Flask", "Django", "FastAPI","Next Js"],
     "color": "bg-green-100 text-green-800"
   },
   {
