@@ -5,7 +5,7 @@
     "technologies": ["Python", "FastAPI", "Next.js", "Celery", "Redis", "WebSockets", "Web Scraping","MongoDB"],
     "icon": "Code",
     "color": "bg-blue-100 text-blue-600",
-    "liveUrl":"http://52.62.184.61:3000/"
+    "liveUrl":"https://cricketinsight.tech/"
   },
   {
     "title": "Mention-Manager",
