@@ -1,22 +1,24 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter } from "next/font/google"
+import { Kanit } from "next/font/google"
 import "./globals.css"
 
-const inter = Inter({ subsets: ["latin"] })
+const kanit = Kanit({ 
+  subsets: ["latin"],
+  weight: ['300', '400', '500', '600', '700', '800', '900']
+})
 
 export const metadata: Metadata = {
-  title: "Anshul Kumar - Software Engineer",
-  description:
-    "Software Engineer with a proven record of delivering scalable backend solutions and streamlining operations. Skilled at leading cross-functional collaboration to build reliable APIs and automation tools.",
-  keywords: "Software Engineer, Python Developer, Backend Developer, API Development, Django, Flask, FastAPI",
-  authors: [{ name: "Anshul Kumar" }],
+  title: "Jack -- 3D Creator",
+  description: "3D Creator specializing in 3D modeling, rendering, motion design, branding, and web design.",
+  keywords: "3D Creator, 3D Modeling, Rendering, Motion Design, Branding, Web Design",
+  authors: [{ name: "Jack" }],
   openGraph: {
-    title: "Anshul Kumar - Software Engineer",
-    description: "Software Engineer specializing in backend development and API design",
+    title: "Jack -- 3D Creator",
+    description: "Striking and unforgettable 3D projects",
     type: "website",
   },
-    generator: 'v0.dev'
+  generator: 'v0.dev'
 }
 
 export default function RootLayout({
@@ -25,8 +27,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>{children}</body>
+    <html lang="en" className="scroll-smooth bg-[#0C0C0C]">
+      <body className={`${kanit.className} bg-[#0C0C0C]`}>{children}</body>
     </html>
   )
 }
